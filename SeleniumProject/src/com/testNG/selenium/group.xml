@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="GroupSuite" verbose="2">
+<test name="Testng">
+<groups>
+<run>
+<include name="start"></include>
+<exclude name="stop"></exclude>
+</run>
+</groups>
+<classes>
+<class name="com.testNG.selenium.RunBygrouping"></class>
+</classes>
+</test>
+</suite>
