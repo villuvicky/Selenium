@@ -1,5 +1,6 @@
 package com.basic.selenium;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -12,6 +13,8 @@ public class OpenChrome {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://google.co.in");
+		driver.findElement(By.xpath("//*[@class='SDkEP']//div[2]//input")).sendKeys("Hey");
+		////*[@class='SDkEP']//div[2]//child::input---child
 	}
 
 }
