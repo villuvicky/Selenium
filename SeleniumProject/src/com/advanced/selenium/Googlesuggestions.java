@@ -16,13 +16,13 @@ public class Googlesuggestions {
 		driver.manage().window().maximize();
 		driver.get("https://www.google.co.in/");
 		WebElement enterbox=driver.findElement(By.name("q"));
-		enterbox.sendKeys("n");
+		enterbox.sendKeys("nisha");
 		Thread.sleep(4000);
 		List<WebElement> options=driver.findElements(By.xpath("/html/body/div/div[2]/form/div[2]/div[1]/div[2]/div[2]/ul/li"));
 		int size=options.size();
 		System.out.println(size);
 		for (WebElement suggestedelements : options) {
-			if(suggestedelements.getText().contains("flix")) {
+			if(suggestedelements.getText().contains("nisha")) {
 				suggestedelements.click();
 				break;
 			}
