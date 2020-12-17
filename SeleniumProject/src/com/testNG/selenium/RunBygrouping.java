@@ -1,5 +1,7 @@
 package com.testNG.selenium;
 
+import org.testng.annotations.AfterGroups;
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 
 public class RunBygrouping {
@@ -7,9 +9,9 @@ public class RunBygrouping {
 	public void startscar() {
 		System.out.println("start");
 	}
-	@Test(groups = {"Firstgear"})
+	@Test(groups = {"Gears"})
 	public void FirstGear() {
-		System.out.println("FirstGear");
+		System.out.println("First Gear");
 	}
 	@Test(groups = {"stop"})
 	public void offthecar() {
@@ -19,12 +21,20 @@ public class RunBygrouping {
 	public void startscar1() {
 		System.out.println("start1");
 	}
-	@Test(groups = {"Firstgear"})
+	@Test(groups = {"Gears"})
 	public void FirstGear1() {
-		System.out.println("FirstGear1");
+		System.out.println("Second Gear");
 	}
 	@Test(groups = {"stop"})
 	public void offthecar1() {
 		System.out.println("stop1");
+	}
+	@BeforeGroups(groups = {"stop","Gears"})
+	public void ofthecar1() {
+		System.out.println("BeforeGroups");
+	}
+	@AfterGroups(groups = {"stop","Gears"})
+	public void afterGroups() {
+		System.out.println("AfterGroups");
 	}
 }

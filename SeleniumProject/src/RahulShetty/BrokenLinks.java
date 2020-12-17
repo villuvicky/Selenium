@@ -31,7 +31,7 @@ public class BrokenLinks {
 				System.out.println(statusCode);
 				asserts.assertTrue(statusCode<400, Link.getText()+ " is broken link");
 		}
-		asserts.assertAll();
+		asserts.assertAll();//apply assert for all
 		driver.close();
 	}
 

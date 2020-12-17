@@ -4,8 +4,9 @@
 <test name="Testng">
 <groups>
 <run>
-<include name="start"></include>
-<exclude name="stop"></exclude>
+<include name="stop"></include>
+<include name="Gears"></include>
+<exclude name="start"></exclude>
 </run>
 </groups>
 <classes>
