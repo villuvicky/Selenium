@@ -28,5 +28,7 @@
 	<classpathentry kind="lib" path="C:/Users/villu/Downloads/poi-4.1.2/ooxml-lib/curvesapi-1.06.jar"/>
 	<classpathentry kind="lib" path="C:/Users/villu/Downloads/poi-4.1.2/ooxml-lib/xmlbeans-3.1.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/villu/Downloads/jxl-2.6.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/villu/Downloads/apache-log4j-2.14.0-bin/log4j-api-2.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/villu/Downloads/apache-log4j-2.14.0-bin/log4j-core-2.14.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
