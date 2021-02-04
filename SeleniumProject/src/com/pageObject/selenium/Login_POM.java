@@ -16,5 +16,6 @@ public class Login_POM {
 	Login_Objects.password(driver).sendKeys("admin123");
 	Login_Objects.submit(driver).click();
 	driver.close();
+	
 	}
 }
