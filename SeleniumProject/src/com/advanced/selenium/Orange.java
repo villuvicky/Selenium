@@ -47,6 +47,7 @@ public class Orange {
 		WebDriverWait wait2= new WebDriverWait(driver,10);
 		WebElement logout= wait2.until(ExpectedConditions.elementToBeClickable((By.xpath("//*[text()='Logout']"))));
 		logout.click();
+		driver.close();
 
 	}
 
