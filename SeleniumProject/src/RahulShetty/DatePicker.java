@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DatePicker {
 
-	public static void main(String[] args)  {
+	public static void main(String[] args) throws InterruptedException  {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -28,11 +28,12 @@ public class DatePicker {
 				String xpath="//div[text()="+"\""+date+"\""+"]"+"//parent::div";
 				driver.findElement(By.xpath(xpath)).click();
 				break;
-				
+
 			}
 
 		}
-driver.close();
+		Thread.sleep(5000);
+		driver.close();
 	}
 
 }
