@@ -3,6 +3,7 @@ package com.testNG.selenium;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
+import org.junit.BeforeClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
@@ -10,47 +11,53 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class NewTest_annotations {
-  @Test
-  public void Test() {
-	  System.out.println("Test");
-  }
-  @Test
-  public void Test1() {
-	  System.out.println("Test1");
-  }
-  @BeforeMethod
-  public void beforeMethod() {
-	  System.out.println("beforeMethod");
-  }
+	 @BeforeSuite(alwaysRun = true)
+	    public static void beforeSuite() {
+	        System.out.println("@BeforeSuite");
+	    }
 
-  @AfterMethod
-  public void afterMethod() {
-	  System.out.println("afterMethod");
-  }
+	    @BeforeClass()
+	    public static void beforeClass() {
+	        System.out.println("@BeforeClass");
+	    }
 
-  @AfterClass
-  public void afterClass() {
-	  System.out.println("afterClass");
-  }
+	    @BeforeTest(alwaysRun = true)
+	    public static void beforeTest() {
+	        System.out.println("@BeforeTest");
+	    }
 
-  @BeforeTest
-  public void beforeTest() {
-	  System.out.println("beforeTest");
-  }
+	    @BeforeMethod(alwaysRun = true)
+	    public static void beforeMethod() {
+	        System.out.println("@BeforeMethod");
+	    }
 
-  @AfterTest
-  public void afterTest() {
-	  System.out.println("afterTest");
-  }
+	    @AfterSuite(alwaysRun = true)
+	    public static void afterSuite() {
+	        System.out.println("@AfterSuite");
+	    }
 
-  @BeforeSuite
-  public void beforeSuite() {
-	  System.out.println("beforeSuite");
-  }
+	    @AfterClass(alwaysRun = true)
+	    public static void afterClass() {
+	        System.out.println("@AfterClass");
+	    }
 
-  @AfterSuite
-  public void afterSuite() {
-	  System.out.println("afterSuite");
-  }
+	    @AfterTest(alwaysRun = true)
+	    public static void afterTest() {
+	        System.out.println("@AfterTest");
+	    }
 
+	    @AfterMethod(alwaysRun = true)
+	    public static void afterMethod() {
+	        System.out.println("@AfterMethod");
+	    }
+
+	    @Test
+	    public void test() {
+	        System.out.println("Test");
+	    }
+
+	    @Test
+	    public void test2() {
+	        System.out.println("Test2");
+	    }
 }

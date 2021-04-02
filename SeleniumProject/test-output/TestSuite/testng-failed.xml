@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT" verbose="2">
-  <listeners>
-    <listener class-name="com.testNG.selenium.Listeners"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)" verbose="2">
     <classes>
-      <class name="com.testNG.selenium.Assertions">
+      <class name="PoMApproach.LoginPageTest">
         <methods>
-          <include name="value_check"/>
+          <include name="UserLogin"/>
         </methods>
-      </class> <!-- com.testNG.selenium.Assertions -->
+      </class> <!-- PoMApproach.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

@@ -13,7 +13,6 @@ public class MultipleSearchEgines {
 	@BeforeSuite
 	public void openbrowse() {
 		starttime=System.currentTimeMillis();
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\villu\\Downloads\\chromedriver.exe");
 		driver= new ChromeDriver();
 	}@Test
 	public void opengoogle(){

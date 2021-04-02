@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testNG.selenium.Assertions">
+      <class name="PoMApproach.LoginPageTest">
         <methods>
-          <include name="value_check"/>
+          <include name="UserLogin"/>
         </methods>
-      </class> <!-- com.testNG.selenium.Assertions -->
+      </class> <!-- PoMApproach.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

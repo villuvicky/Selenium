@@ -4,6 +4,8 @@ import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 
+
+@Test
 public class RunBygrouping {
 	@Test(groups = {"start"})
 	public void startscar() {

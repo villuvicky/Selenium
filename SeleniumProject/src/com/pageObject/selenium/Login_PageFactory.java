@@ -18,7 +18,6 @@ public class Login_PageFactory {
 		Login_Objects_FindBy.username.sendKeys("Admin");
 		Login_Objects_FindBy.password.sendKeys("admin123");
 		Login_Objects_FindBy.submit.click();
-
 		driver.close();
 
 	}
