@@ -24,7 +24,7 @@ public class BrokenLinks {
 			 String url=Link.getAttribute("href");
 			 System.out.println(url);
 				URL URl= new URL(url);
-				HttpURLConnection  connection=(HttpURLConnection) URl.openConnection();
+				HttpURLConnection connection=(HttpURLConnection) URl.openConnection();
 				connection.setRequestMethod("GET");	
 				connection.connect();
 				int statusCode=connection.getResponseCode();

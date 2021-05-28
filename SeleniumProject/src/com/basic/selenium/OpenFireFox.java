@@ -1,5 +1,7 @@
 package com.basic.selenium;
 
+import java.io.Console;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,5 +20,8 @@ public class OpenFireFox {
 	driver.findElement(By.name("search_query")).sendKeys("Pulsar 125 review");
 	
 	driver.findElement(By.id("search-icon-legacy")).click();
+	
+	driver.get("https://www.ultimatix.net/");
+
 	}
 }

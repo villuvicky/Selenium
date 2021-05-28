@@ -1,5 +1,6 @@
 package com.basic.selenium;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,6 +18,7 @@ public class WebDriverMangerEx {
 		WebDriverManager.chromedriver().browserVersion("88.0.4324").setup();
 		WebDriverManager.chromedriver().driverVersion("88.0.4324.96").setup();
 		driver= new ChromeDriver();
+		
 	}
 
 }
